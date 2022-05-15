@@ -1,4 +1,0 @@
-django
-pytest
-pytest-django
-flake8
