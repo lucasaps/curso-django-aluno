@@ -37,4 +37,9 @@ jobs:
     - name: Test with pytest
       run: |
         pipenv run pytest --cov=pypro
+    - name: Codecov report
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      run: |
         pipenv run codecov
+        
